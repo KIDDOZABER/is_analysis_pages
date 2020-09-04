@@ -1,0 +1,198 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f3f3f3;
+	padding-top: 50px;
+}
+
+footer .logo {
+	width: 10vw;
+	min-width: 120px;
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
+footer .phone {
+	width: 22vw;
+	min-width: 264px;
+	height: 3.5vw;
+	min-height: 42px;
+	position: relative;
+	box-sizing: border-box;
+	padding: .8% 0;
+	display: flex;
+	border: 1px solid #b9b9b9;
+	margin-bottom: 2.5vw;
+}
+
+footer .phone .phone-inner {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+	background: #f3f3f3;
+	left: -2px;
+}
+
+footer .phone img {
+	width: 7%;
+	margin-right: 1vw;
+}
+
+footer .phone p {
+	font-size: 1vw;
+	font-weight: bolder;
+	color: #14916a;
+}
+
+.bottom {
+	width: 62.5%;
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.bottom p.bottom-title {
+	margin-bottom: 28.8px;
+}
+
+.bottom .contact {
+	flex: 0 0 35%;
+}
+
+.bottom .contact li {
+	display: flex;
+	align-items: center;
+}
+
+.bottom .contact .contact-icon {
+	flex: 0 0 5%;
+	display: flex;
+	justify-content: center;
+	margin-right: 5px;
+	
+}
+
+.contact-icon img {
+	height: 100%;
+	width: auto;
+}
+
+.bottom .contact li p {
+	font-size: .5vw;
+	line-height: 25px;
+}
+
+.bottom .nav {
+	flex: 0 0 44%;
+}
+
+.bottom .nav ul {
+	display: flex;
+	margin-bottom: 28.8px;
+	flex-wrap: wrap;
+}
+
+.bottom .nav li {
+	font-size: .6vw;
+	margin-right: 8px;
+}
+
+.bottom .nav li::after {
+	content: "/";
+	margin-left: 8px;
+}
+
+.bottom .nav li:last-child::after {
+	content: "";
+}
+
+.bottom .nav li:hover a{
+	color: #14916a;
+}
+
+.bottom .nav img {
+	width: 42%;
+	margin-left: 12%;
+}
+
+.entry {
+	flex: 0 0 20%;
+	position: relative;
+}
+
+.entry ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2vw;
+	position: relative;
+}
+
+.entry li {
+	flex: 0 0 10%;
+	cursor: pointer;
+	position: relative;
+}
+
+.entry li img {
+	position: absolute;
+}
+
+.entry li img:nth-child(2) {
+	display: none;
+}
+
+.entry li:hover img:nth-child(1) {
+	display: none;
+}
+
+.entry li:hover img:nth-child(2) {
+	display: block;
+}
+
+.entry .QRcode {
+	width: 8vw;
+	height: 8vw;
+	background: white;
+	box-sizing: border-box;
+	padding: .5vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	top: 50px;
+	left: -3.5vw;
+	visibility: hidden;
+}
+
+.entry .QRcode::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 1vw solid;
+	border-color: transparent transparent white transparent;
+	position: absolute;
+	top: -2vw;
+	left: 3vw;
+}
+
+.entry li:nth-child(1):hover + .QRcode{
+	visibility: visible;
+}
+
+.entry p:last-child {
+	color: #14916a;
+}
+
+.copyright {
+	width: 100%;
+	height: 48px;
+	border-top: 1px solid #d3d3d3;
+	font-size: .5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

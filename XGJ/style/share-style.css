@@ -1,0 +1,59 @@
+.tag {
+	margin-top: 14.5%;
+}
+
+.share {
+	background: white;
+}
+
+.share ul {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 2% 0;
+}
+
+.share li {
+	width: 49.5%;
+	margin-bottom: 1%;
+	position: relative;
+	cursor: pointer;
+}
+
+.share .shadow {
+	width: 90%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	color: white;
+	font-size: 29px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all ease .3s;
+	z-index: 1;
+}
+
+.share li::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 13px solid;
+	border-color: rgba(20,145,106,0.5) rgba(20,145,106,0.5) transparent transparent;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: -26px;
+}
+
+.share li:hover::after {
+	opacity: 0;
+}
+
+.share li:hover > .shadow {
+	opacity: 1;
+}

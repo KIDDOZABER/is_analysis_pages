@@ -1,0 +1,138 @@
+section .title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section .title img {
+	width: 2%;
+	min-width: 24px;
+	margin-bottom: 3.84px;
+}
+
+section .title p {
+	width: 14%;
+	min-width: 168px;
+	border: 1px solid #b6b6b6;
+	font-size: 0.5vw;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 3.84px;
+	margin-bottom: 19.2px;
+}
+
+.pic {
+	margin-bottom: -.236vw;
+}
+
+.company {
+	padding-top: 57.6px;
+	background: #f3f3f3;
+}
+
+.company .pic {
+	cursor: pointer;
+}
+
+.company .pic:hover > .information {
+	opacity: 1;
+}
+
+.company .information {
+	width: 16.875vw;
+	min-width: 202.5px;
+	height: 24.15vw;
+	min-height: 294px;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	box-sizing: border-box;
+	padding: 1.7% 1.65%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all ease .3s;
+}
+
+.information-title {
+	border-bottom: 1px solid #a0a4a8;
+}
+
+.information-title h1 {
+	font-size: 22.5px;
+	font-weight: 500;
+}
+
+.information-title p {
+	font-size: .5vw;
+	font-weight: 500;
+	margin-bottom: 1vw;
+}
+
+.information-content p {
+	font-size: .7vw;
+	line-height: 30px;
+}
+
+.team {
+	padding-top: 57.6px;
+	background: white;
+	padding-bottom: 2.5vw;
+}
+
+.team .title img {
+	width: 3.5%;
+	min-width: 42px;
+}
+
+.team .pic {
+	position: relative;
+	cursor: pointer;
+}
+
+.team .pic:hover > .information {
+	opacity: 1;
+}
+
+.team .information {
+	position: absolute;
+	width: 61.5vw;
+	min-width: 750px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	box-sizing: border-box;
+	bottom: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 14.4px 0;
+	opacity: 0;
+	transition: all ease .3s;
+}
+
+.team .information h1 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.team .information p {
+	font-size: .5vw;
+}
+
+.team .left,.right {
+	width: 32px;
+	position: absolute;
+	top: 50%;
+	margin-top: -32px;
+	cursor: pointer;
+}
+
+.left {
+	left: -64px;
+}
+
+.right {
+	left: 100%;
+	margin-left: 32px;
+}

@@ -1,0 +1,148 @@
+.contact-us {
+	background: #fafafa;
+	display: flex;
+	position: relative;
+}
+
+.contact-us-left {
+	flex: 0 0 50%;
+	background: white;
+	box-sizing: border-box;
+	padding: 44px 38px;
+}
+
+.contact-us h1 {
+	font-size: 23px;
+	margin-bottom: 20px;
+}
+
+.contact-us h2 {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.contact-us-left ul {
+	margin-bottom: 15px;
+}
+
+.contact-us-left li {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.contact-us-left p {
+	font-size: 12px;
+	color: #999999;
+	margin-bottom: 55px;
+}
+
+.wechat {
+	display: flex;
+	align-items: center;
+}
+
+.wechat img {
+	width: 23%;
+	margin-right: 10%;
+}
+
+.wechat .character {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wechat .character span {
+	color: #14916A;
+}
+
+.contact-us-center {
+	width: 1px;
+	height: 23vw;
+	min-height: 376px;
+	background: #dfdfdf;
+	position: absolute;
+	left: 50%;
+	top: 38px;
+}
+
+.contact-us-right {
+	flex: 0 0 50%;
+	background: white;
+	box-sizing: border-box;
+	padding: 44px 38px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-us-right form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-us-right .form-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.form-item label {
+	flex: 0 0 26%;
+	font-size: 17px;
+	text-align: right;
+	margin-right: 6%;
+}
+
+.form-item label span {
+	color: red;
+}
+
+.form-item input,.form-item select {
+	width: 14vw;
+	min-width: 168px;
+	height: 2vw;
+	min-height: 24px;
+	box-sizing: border-box;
+	padding-left: 2%;
+}
+
+.submit {
+	width: 70%;
+	margin: 6% 15%;
+	height: 3vw;
+	min-height: 36px;
+	font-size: 22px;
+	background: #333333;
+	color: white;
+	border-radius: 1.5vw;
+}
+
+.submit:hover {
+	background: #14916A;
+}
+
+.map {
+	background: url(../img/contact/mp-bg.jpg);
+}
+
+#container {
+	height: 30vw;
+	min-height: 360px;
+}
+
+@media screen and (max-width: 1330px) {/* 可视区域小于 1330px, 设置更小属性值 */
+	.contact-us h1 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.contact-us h2 {
+		font-size: 15px;
+		margin-bottom: 16px;
+	}
+	.form-item label {
+		flex: 0 0 30%;
+	}
+}

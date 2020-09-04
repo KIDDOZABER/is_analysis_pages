@@ -1,0 +1,286 @@
+aside {
+	width: 15.5vw;
+	min-width: 186px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	padding-top: 120px;
+	z-index: 1;
+}
+
+aside .logo {
+	background: white;
+	min-height: 62.5px;
+	box-sizing: border-box;
+	padding: 6% 0;
+	padding-left: 17%;
+	padding-right: 23%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #37a180;
+	position: relative;
+}
+
+aside .logo::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 6px solid ;
+	border-color: #37a180 #37a180 transparent transparent;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: -12px;
+}
+
+nav ul {
+	margin-top: 52px;
+	margin-bottom: 60px;
+}
+
+nav li {
+	width: 50%;
+	height: 2.5vw;
+	min-height: 30px;
+	margin-left: 25%;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+	line-height: 2.5vw;
+	cursor: pointer;
+}
+
+nav li:hover {
+	background: white;
+	border-radius: 1vw 0 1vw 0;
+}
+
+nav li:hover a {
+	color: #14916A;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	font-size: 1vw;
+	width: 100%;
+	height: 100%;
+	padding-left: 24%;
+}
+
+aside .phone {
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	border: 1px solid white;
+	box-sizing: border-box;
+	padding: 4% 5%;
+	color: white;
+	font-size: 1vw;
+	font-weight: bolder;
+	align-items: center;
+	margin-bottom: 1vw;
+	line-height: 25px;
+}
+
+aside .phone img {
+	width: 15%;
+	margin-right: 10%;
+}
+
+.third-part ul{
+	width: 80%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.third-part li {
+	flex: 0 0 10%;
+	cursor: pointer;
+	position: relative;
+}
+
+.third-part li img {
+	position: absolute;
+}
+
+.third-part li img:nth-child(2) {
+	display: none;
+}
+
+.third-part li:hover img:nth-child(1) {
+	display: none;
+}
+
+.third-part li:hover img:nth-child(2) {
+	display: block;
+}
+
+/* overread */
+
+.third-part .QRcode {
+	top: 3vw;
+	left: 0;
+}
+
+.third-part .QRcode::before {
+	left: 1vw;
+}
+
+banner {
+	width: 100%;
+	position: relative;
+}
+
+banner .carousel {
+	width: 60px;
+	position: absolute;
+	top: -55px;
+	left: 50%;
+	margin-left: -30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel li {
+	width: 8px;
+	height: 8px;
+	background: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.carousel li:first-child {
+	background: #14916A;
+}
+
+.carousel li:hover {
+	background: #14916A;
+}
+
+section.welcome {
+	display: flex;
+	padding-top: 96px;
+	margin-bottom: 96px;
+}
+
+.welcome .section-left {
+	flex: 0 0 45%;
+	position: relative;
+}
+
+.title {
+	border-left: 8px solid #15af7f;
+	padding-left: 12px;
+	margin-bottom: 40px;
+}
+
+.title h1 {
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.title p {
+	font-size: 12px;
+	color: #a4a4a4;
+}
+
+.welcome-content {
+	width: 95%;
+	font-size: 0.85vw;
+	line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box; 
+	-webkit-line-clamp: 5; 
+	-webkit-box-orient: vertical;
+}
+
+.section-left button {
+	width: 9vw;
+	min-width: 94px;
+	background: white;
+	color: #14916a;
+	padding: 3% 1%;
+	border-radius: 5vw;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+	position: absolute;
+	top: 78%;
+	left: 60%;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+.section-left button:hover {
+	background: #14916a;
+	color: white;
+}
+
+.section-right img {
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	border-bottom: 5px solid #16b685;
+	cursor: pointer;
+}
+
+.service {
+	margin-bottom: 3vw;
+}
+
+.service-show {
+	display: flex;
+	justify-content: space-between;
+}
+
+.service-show .service-item {
+	position: relative;
+	cursor: pointer;
+	background: red;
+}
+
+.service-show .service-item:not(:last-child) {
+	margin-right: 1%;
+}
+
+.service-item img {
+	display: block;
+}
+
+.service-item .information {
+	background: rgba(41,159,122,0.8);
+	color: white;
+	box-sizing: border-box;
+	padding: 0.5vw;
+	width: 100%;
+	position: absolute;
+	bottom: -20%;
+	visibility: hidden;
+	transition: bottom .3s;
+}
+
+.service-item .information h1 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.service-item .information p {
+	font-size: .5vw;
+}
+
+.service-item:hover .information {
+	bottom: 0;
+	visibility: visible;
+}
+
+.service-item:hover img {
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1330px) {/* 可视区域小于 1330px, 设置更小属性值 */
+	.welcome-content {
+		-webkit-line-clamp: 4;
+	}
+}

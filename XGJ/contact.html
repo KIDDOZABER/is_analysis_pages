@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./style/default-style.css"/>
+		<link rel="stylesheet" type="text/css" href="./style/header-style.css"/>
+		<link rel="stylesheet" type="text/css" href="./style/contact-style.css"/>
+		<link rel="stylesheet" type="text/css" href="./style/footer-style.css"/>
+		<script src="https://webapi.amap.com/maps?v=1.4.15&key=eddbdbac2e3a65a65171cd2630fc0f4c"></script>
+		<script src="./script/map.js" type="text/javascript" charset="utf-8"></script>
+		<title>联系我们</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo">
+					<a href="index.html">
+						<div class="inner-logo">
+							<img src="./img/header/header-logo.png" />
+						</div>
+					</a>
+				</div>
+				<div class="header-nav">
+					<ul>
+						<li><a href="about.html">了解我们</a></li>
+						<li><a href="share.html">案例分享</a></li>
+						<li><a href="#">精装服务</a></li>
+						<li><a href="#">优质产品</a></li>
+						<li><a href="news.html">公司动态</a></li>
+						<li><a href="#">找我们聊聊</a></li>
+					</ul>
+				</div>
+				<div class="third-part">
+					<ul>
+						<li><img src="./img/header/wechat.png" alt="微信" /><img src="./img/header/wechat-hover.png" alt="微信" /></li>
+						<div class="QRcode">
+							<img src="./img/contact/qr-code.jpg" />
+						</div>
+						<li><img src="./img/header/weibo.png" alt="微博" /><img src="./img/header/weibo-hover.png" alt="微博" /></li>
+						<li><img src="./img/header/yelp.png" alt="大众点评" /><img src="./img/header/yelp-hover.png" alt="大众点评" /></li>
+						<li><img src="./img/header/tiktok.png" alt="抖音" /><img src="./img/header/tiktok-hover.png" alt="抖音" /></li>
+						<li><img src="./img/header/jia.png" alt="齐家" /><img src="./img/header/jia-hover.png" alt="齐家" /></li>
+						<li><img src="./img/header/tubatu.png" alt="土巴兔" /><img src="./img/header/tubatu-hover.png" alt="土巴兔" /></li>
+					</ul>
+				</div>
+			</nav>
+			<banner>
+				<img src="img/header/news-banner.jpg" >
+			</banner>
+			<div class="tag-container">
+				<div class="tag">
+					<p>CONTACT US</p>
+					<h1>联系我们</h1>
+				</div>
+			</div>
+		</header>
+		<content>
+			<section class="contact-us">
+				<div class="contact-us-left">
+					<h2>联系方式</h2>
+					<ul>
+						<li><span>地址 ：</span>成都市温江区珠江广场写字楼15楼</li>
+						<li><span>电话 ：</span>028-82708866</li>
+						<li><span>手机 ：</span>13558833169</li>
+						<li><span>Q Q ：</span>123456789</li>
+					</ul>
+					<p>09:00 AM ~ 06:00 PM，周末照常上班</p>
+					<div class="wechat">
+						<img src="./img/contact/qr-code.jpg" >
+						<div class="character">
+							<h1>— 扫微信二维码 —</h1>
+							<h2>添加<span>熊管家</span>微信咨询</h2>
+						</div>
+					</div>
+				</div>
+				<div class="contact-us-center"></div>
+				<div class="contact-us-right">
+					<h1>— 请客户顾问联系我 —</h1>
+					<form action="" method="">
+						<div class="form-item">
+							<label><span>* </span>您的姓名</label>
+							<input type="text" placeholder="请填写您的姓名" required="required" />
+						</div>
+						<div class="form-item">
+							<label><span>* </span>手机号码</label>
+							<input type="tel" placeholder="请填写您的手机号码" required="required" />
+						</div>
+						<div class="form-item">
+							<label>建筑面积</label>
+							<select>
+								<option value ="选填">选填</option>
+							</select>
+						</div>
+						<div class="form-item">
+							<label>致电时间</label>
+							<select>
+								<option value ="立即联系">立即联系</option>
+							</select>
+						</div>
+						<input type="submit" class="submit" value="立即预约" />
+					</form>
+				</div>
+			</section>
+			<section class="map">
+				<div id="container"></div>
+			</section>
+		</content>
+		<footer>
+			<div class="logo">
+				<a href="index.html"><img src="./img/footer/footer-logo.png" /></a>
+			</div>
+			<div class="phone">
+				<div class="phone-inner">
+					<img src="./img/footer/phone.png" />
+					<p>028-82708866 / 13558833169</p>
+				</div>
+				<div class="phone-fill"></div>
+			</div>
+			<div class="bottom">
+				<div class="contact">
+					<p class="bottom-title">联系方式</p>
+					<ul>
+						<li>
+							<div class="contact-icon">
+								<img src="./img/footer/home.png" />
+							</div>
+							<p>成都熊管家装饰装修有限公司</p>
+						</li>
+						<li>
+							<div class="contact-icon">
+								<img src="./img/footer/address.png" />
+							</div>
+							<p>地址：成都市温江区珠江广场写字楼15楼</p>
+						</li>
+						<li>
+							<div class="contact-icon">
+								<img src="./img/footer/contact-phone.png" />
+							</div>
+							<p>联系电话：028-82708866（座机）/13558833169</p>
+						</li>
+						<li>
+							<div class="contact-icon">
+								<img src="./img/footer/email.png" />
+							</div>
+							<p>E-mail：admian@admin.com</p>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<p class="bottom-title">快速导航</p>
+					<ul>
+						<li><a href="about.html">了解我们</a></li>
+						<li><a href="share.html">案例分享</a></li>
+						<li><a href="#">精装服务</a></li>
+						<li><a href="#">优质产品</a></li>
+						<li><a href="news.html">公司动态</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+					<img src="./img/footer/character.png" >
+				</div>
+				<div class="entry">
+					<p class="bottom-title">快捷入口</p>
+					<ul>
+						<li><img src="./img/footer/wechat.png" alt="微信" /><img src="./img/footer/wechat-hover.png" /></li>
+						<div class="QRcode">
+							<img src="./img/contact/qr-code.jpg" >
+						</div>
+						<li><img src="./img/footer/microblog.png" alt="微博" /><img src="./img/footer/microblog-hover.png" /></li>
+						<li><img src="./img/footer/yelp.png" alt="大众点评" /><img src="./img/footer/yelp-hover.png" /></li>
+						<li><img src="./img/footer/tiktok.png" alt="抖音" /><img src="./img/footer/tiktok-hover.png" /></li>
+						<li><img src="./img/footer/jia.png" alt="齐家" /><img src="./img/footer/jia-hover.png" /></li>
+						<li><img src="./img/footer/tubatu.png" alt="土巴兔" /><img src="./img/footer/tubatu-hover.png" /></li>
+					</ul>
+					<p>互联网家装引领者</p>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright &copy;2015-2019 成都熊管家装饰装修有限公司 版权所有</p>
+			</div>
+		</footer>
+	</body>
+</html>
